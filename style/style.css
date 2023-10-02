@@ -1,0 +1,146 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 68px;
+}
+
+.logo-bar {
+  height: 48px;
+  width: 100%;
+}
+
+.nav-bar a{
+  display: inline-block;
+  text-decoration: none;
+  margin: 0px 10px 0px 0px;
+}
+
+.nav-bar a:hover {
+  font-weight: bold;
+}
+
+.nav-bar a::before {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.nav-bar {
+  height: 20px;
+  width: 100%;
+  text-align: right;
+}
+
+.front-page-text {
+  font-size: 50px;
+  text-align: center;
+}
+
+.header text{
+    padding: 0px 10px 0px 0px;
+    font-size: 34px;
+    float: right;
+}
+
+label {
+    font-weight: 100;
+}
+
+.login-text, .register-text {
+  width: 100%;
+}
+
+.login-form table th, .login-form table td, .reg-form table th, .reg-form table td{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+    width: 100%;
+    height: 41px;
+}
+
+.reg-form table{
+  width: auto; 
+  height: 400px;
+  margin: 0 auto; 
+}
+
+.login-form table {
+  width: auto; 
+  height: 250px;
+  margin: 0 auto; 
+}
+
+.reg-form h2, .login-form h1{
+  text-align: center;
+  font-size: 40px;
+}
+
+.reg-form, .login-form {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.center {
+    font-weight: 100;
+    text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #000000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2.5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+      
+.button:hover span {
+  padding-right: 12px;
+}
+      
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+label.error {
+  color: rgb(255, 0, 0);
+}
+
+.content{
+  display: none;
+}
+
+
